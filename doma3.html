@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>domaći rad 3 - forme</title>
+  </head>
+  <body>
+    <h3>Forme</h3>
+    <legend>anketa</legend>
+    <form action="#" method="get" enctype="text/plain" autocomplete="on">
+      <fieldset>
+        <label for="gsearch">Pretraži Google:</label>
+        <input type="search" id="gsearch" name="gsearch" />
+      </fieldset>
+      <br /><br />
+      <fieldset>
+        <label for="ime">Ime:</label>
+        <input type="text" name="ime" id="ime" />
+        <label for="prezime">Prezime:</label>
+        <input type="text" name="prezime" id="prezime" />
+      </fieldset>
+      <br />
+      <fieldset>
+        <p>odaberite spol:</p>
+
+        <input type="radio" name="Spol" id="SpolMusko" value="M" />
+        <label for="SpolMusko">Muško</label> <br />
+        <input type="radio" name="Spol" id="SpolZensko" value="Z" />
+        <label for="SpolZensko">Žensko</label> <br />
+        <input type="radio" name="Spol" id="Spolneznamnisam" value="N" />
+        <label for="Spolneznamnisam">Nesvrstani</label> <br />
+      </fieldset>
+      <fieldset>
+        <label for="datum">Datum rođenja:</label>
+        <input type="date" id="datum" name="datum" /><br /><br />
+      </fieldset>
+      <fieldset>
+        <label for="grad" id="grad"
+          >Odaberite grad u kojemu živite (ako nema unesite ručno)</label
+        >
+        <input list="gradovi" name="grad" />
+        <datalist id="gradovi">
+          <option value="Zagreb">Zagreb</option>
+          <option value="Osijek">Osijek</option>
+          <option value="Rijeka">Rijeka</option>
+          <option value="Pula">Pula</option>
+          <option value="Zadar">Zadar</option>
+          <option value="Split">Split</option>
+          <option value="Dubrovnik">Dubrovnik</option>
+        </datalist>
+        <label for="ime">Ime grada:</label>
+        <input type="text" name="ime" id="ime" />
+      </fieldset>
+      <fieldset>
+        <label for="edukacija">Vrsta edukacije:</label>
+        <select id="edukacija" name="Edukacija">
+          <optgroup label="srednja stručna sprema"></optgroup>
+          <option value="tehnička zanimanja">Tehnička zanimanja</option>
+          <option value="gimnazijska zanimanja">Gimnazijski smjerovi</option>
+          <option value="ekonomska zanimanja">Ekonomska zanimanja</option>
+          <option value="turisticka zanimanja">Turistička zanimanja</option>
+          <optgroup label="viša stručna sprema"></optgroup>
+          <option value="tehnički studiji">Tehnički studiji</option>
+          <option value="humanistički studiji">Humanistički studiji</option>
+          <option value="turističi studiji">Turistički studiji</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <label for="datemin">Unesite datum školovanja od:</label>
+        <input type="date" id="datemin" name="datemin" min="1979-01-01" />
+        <label for="datemax">do:</label>
+        <input
+          type="date"
+          id="datemax"
+          name="datemax"
+          max="2021-12-31"
+        /><br /><br />
+      </fieldset>
+      <fieldset>
+        <label for="voznja">Vozna prijevozna sredstva:</label><br />
+        <input type="checkbox" id="prijevoz1" name="prijevoz2" value="javni" />
+        <label for="prijevoz1"> Javni prijevoz</label><br />
+        <input type="checkbox" id="prijevoz2" name="prijevoz1" value="auto" />
+        <label for="prijevoz2"> Posjedujem auto</label><br />
+        <input type="checkbox" id="prijevoz3" name="prijevoz2" value="bicikl" />
+        <label for="prijevoz3"> posjedujem bicikal</label><br />
+        <br />
+      </fieldset>
+      <br /><br />
+      <fieldset>
+        <label for="boja">odaberite omiljenu boju:</label>
+        <input type="color" id="boja" name="boja" /><br />
+      </fieldset>
+      <br /><br />
+      <fieldset>
+        <label for="quantity">Koliko djece imate:</label>
+        <input type="number" id="quantity" name="quantity" min="0" max="10" />
+      </fieldset>
+      <br /><br />
+      <fieldset>
+        <p>Ukratko o sebi:</p>
+        <textarea
+          name="message"
+          style="
+            width: 420px;
+            height: 210px;
+            background-color: rgb(145, 164, 164);
+          "
+        ></textarea>
+      </fieldset>
+
+      <br /><br />
+      <fieldset>
+        <label for="email">Vaš e-mail:</label>
+        <input type="email" id="email" name="email" /><br /><br />
+      </fieldset>
+      <fieldset>
+        <label for="tel">Vaš broj telefona:</label>
+        <input type="tel" id="tel" name="Telefon" />
+      </fieldset>
+      <fieldset>
+        <label for="favpage">Omiljena web adresa:</label>
+        <input type="url" id="favpage" name="favpage" />
+      </fieldset>
+      <fieldset>
+        <label for="vol">Koliko ste zadovolji anketom:</label>
+        0
+        <input type="range" id="vol" name="vol" min="0" max="100" />
+        100
+      </fieldset>
+      <br /><br />
+      <fieldset>
+        <label for="myfile">odaberite sliku:</label>
+        <input type="file" id="myfile" name="myfile" />
+      </fieldset>
+      <fieldset>
+        <label for="pwd">Vaša zaporka:</label><br />
+        <input type="password" id="pwd" name="pwd" />
+      </fieldset>
+      <label for="reset">Resetiraj anketu</label>
+      <input type="reset" id="reset" /><br />
+      <input type="image" src="img_submit.gif" alt="Submit" /><br />
+      <input
+        type="button"
+        onclick="alert('Viktor Grgičak')"
+        value="Autor"
+      /><br />
+      <input type="hidden" id="custId" name="custId" value="3487" />
+    </form>
+  </body>
+</html>

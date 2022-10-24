@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Predavanje 3 forme pt.2</title>
+  </head>
+  <body>
+    <legend>osobni podatci</legend>
+
+    <form
+      action="#"
+      method="get"
+      enctype="text/plain"
+      autocomplete="on"
+      oninput='umnozak.value=(parseInt(faktor1.value)*parseInt(faktor2.value))+"kn zarade"'
+    >
+      <fieldset>
+        <label>Ime</label>
+        <input type="text" name="Ime" id="Ime" /> <br />
+      </fieldset>
+      <br />
+
+      <br />
+
+      <p>Koja vozila posjedujete?</p>
+      <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
+      <label for="vehicle1"> I have a bike</label><br />
+      <input type="checkbox" id="vehicle2" name="vehicle2" value="Car" />
+      <label for="vehicle2"> I have a car</label><br />
+      <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat" />
+      <label for="vehicle3"> I have a boat</label><br /><br />
+      <input type="submit" value="Submit" /> <br /><br />
+
+      <label for="boja">odaberite boju</label>
+      <select id="boja" name="Boja">
+        <optgroup label="tople boja"></optgroup>
+        <option value="plava">plava</option>
+        <option value="crna">crna</option>
+        <optgroup label="hladne boja"></optgroup>
+        <option value="crvena">crvena</option>
+        <option value="zelena">zelena</option>
+        <input type="submit" value="Submit" />
+      </select>
+      <br /><br />
+      <p>Unesite svoj članak.</p>
+      <textarea
+        name="message"
+        style="width: 300px; height: 150px; background-color: aqua"
+      ></textarea>
+      <!--moze se i sa css-om definirat-->
+      <p>prostor za unos poruke.</p>
+      <br /><br />
+      <label for="grad" id="grad">Odaberite grad u kojemu živite</label>
+      <input list="gradovi" name="grad" />
+      <datalist id="gradovi">
+        <option value="Šibenik">Šibenik</option>
+        <option value="Beli manastir">Beli manastir</option>
+        <option value="Rovinj">Rovinj</option>
+        <option value="Međimurje">Međimurje</option>
+      </datalist>
+      <br /><br />
+      <p>isprobaj množenje</p>
+      <input type="text" name="faktor1" id="faktor1" /> (radni sati) *
+      <input type="text" name="faktor2" id="faktor2" /> (cijena sata) =
+      <output name="umnozak" for="faktor1 faktor2"></output>
+    </form>
+  </body>
+</html>
