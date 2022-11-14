@@ -1,0 +1,47 @@
+
+body{
+    background-color: rgba(0, 0, 0, 0.485);
+    font-family: 'Ubuntu', sans-serif, 'Times New Roman', Times;}
+h1, h2, h3 {
+    color: rgba(239, 14, 247, 0.439);
+    font-size:34px;
+}
+p::first-letter {
+    color:#FF0000;
+    font-size: 150%;
+    font-style: italic;
+}
+.para{
+    color:#dbdb69;
+    font-size:16px;
+    text-align: center;
+}
+table {
+    color:rgba(16, 71, 31, 0.833);
+    font-size:1.5em;
+    text-align: end;
+}
+#ul {
+    color:hsl(257, 55%, 31%)
+}
+a[target=_blank] {
+    background-color: antiquewhite;
+}
+a:link {
+    color: #e2df07;
+}
+  
+a:visited {
+    color: green;
+}
+  
+a:hover {
+    color: #FF00FF;
+}
+  
+a:active {
+    color: #0000FF;
+}
+p:last-of-type{
+    color:#0000FF
+}
