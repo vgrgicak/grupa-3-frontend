@@ -45,3 +45,6 @@ a:active {
 p:last-of-type{
     color:#0000FF
 }
+td:last-child{
+    color:goldenrod;
+}
