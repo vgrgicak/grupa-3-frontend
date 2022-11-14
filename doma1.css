@@ -43,8 +43,8 @@ a:active {
     color: #0000FF;
 }
 p:last-of-type{
-    color:#0000FF
+    color: #0000FF
 }
 td:last-child{
-    color:goldenrod;
+    color: goldenrod;
 }
