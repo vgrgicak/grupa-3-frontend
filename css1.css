@@ -1,0 +1,17 @@
+body {
+    /*background-image: url("./css1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 500px;
+    background-attachment: fixed;
+    background-size:cover;*/
+    background: blue url(./css1.png) no-repeat fixed center;
+}
+h1 {
+    font-style: italic;
+    text-shadow: 5px 5px 1px rgba(45, 12, 256, 0.5);
+}
+p {
+    background-color: rgba(0, 255, 255, 0.5);
+    
+}
