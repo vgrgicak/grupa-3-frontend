@@ -1,0 +1,43 @@
+header {
+    display: flex;
+    margin: 0 2%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.head  {
+    background: rgb(104, 132, 221);
+    width:24%;
+    margin:0;
+}
+.head2 {
+    background: rgb(104, 132, 221);
+    width:74%;
+    margin:0;
+}
+.menu {
+    width:60%;
+    background: rgb(122, 224, 124);
+    margin: 0 20%;
+    margin-top: 10px;
+}
+main {
+    display: flex;
+    margin: 0 2%;
+    flex-wrap:nowrap;
+    justify-content: space-between;
+    height: 100px;
+}
+.aside1 {
+    width: 18%;
+    background: orange;
+    line-height: 180px;
+    margin-bottom: 0;
+}
+.content {
+    width: 60%;
+    background: orange;
+}
+.aside2 {
+    width: 18%;
+    background: orange;
+}

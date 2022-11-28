@@ -1,0 +1,20 @@
+* {
+    box-sizing: border-box;
+}
+.conteiner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center
+}
+.design div {
+    background:rgb(71, 97, 184);
+    border: 5px solid rgb(86, 126, 218) ;
+    border-radius: 20px;
+    margin:0;
+}
+.item {
+    width:33%;
+    color:aliceblue;
+    padding: 20px;
+    font-size: 2em;
+}

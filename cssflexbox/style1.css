@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.menu div {
+    background:rgb(71, 97, 184);
+    border: 5px solid rgb(86, 126, 218) ;
+    border-radius: 20px;
+    text-align: center;
+}
+.item {
+    width: 20%;
+    height: 100px;
+    margin:auto;
+    color:aliceblue;
+    padding: 30px;
+    font-size: 2em;
+}
