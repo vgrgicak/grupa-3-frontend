@@ -1,0 +1,67 @@
+div {
+    animation-name: an1, an2, an3, an4, an5;
+    animation-duration: 4s;
+    animation-direction:normal;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    border:5px solid white;
+    color:white;
+    font-weight: bold;
+    animation-duration: 1s, 1s, 1s, 1s, 2s;
+    animation-delay: 0s,1s,2s,3s,4s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1, 1, 1, 1, infinite;
+    line-height: 200px;
+    text-align: center;
+    text-size 2em;
+}
+@keyframes an1 {
+    from {
+        border-top-color:white;
+    }
+    to {
+        border-top-color:black;}
+}
+@keyframes an2 {
+    from {
+        border-right-color: white;
+    }
+    to {
+        border-right-color: black;
+    }
+}
+@keyframes an3 {
+    from {
+        border-bottom-color: white;
+    }
+    to {
+        border-bottom-color: black;
+    }
+}
+@keyframes an4 {
+    from {
+        border-left-color: white;
+    }
+    to {
+        border-left-color: black;
+    }
+}
+@keyframes an5 {
+    0% {
+        color:white;
+    }
+    30%, 60% {
+        color:black;
+    }
+    100% {
+        color:white;
+    }
+}
