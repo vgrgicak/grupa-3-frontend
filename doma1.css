@@ -1,31 +1,71 @@
-
+* {
+    box-sizing: border-box;
+}
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.menu a {
+    background:rgb(17, 20, 74);
+    text-align: center;
+    
+}
+.flex-container2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.item {
+    width: 20%;
+    margin: 0px;
+    padding: 0px;
+    font-size: 2em;
+}
+.item2{
+    width:80%;
+    padding: 0px;
+    font-size: 2em;
+    
+}
+.design p {
+    background:rgb(71, 97, 184);
+    border: 5px solid rgb(86, 218, 115) ;
+    border-radius: 20px;
+    margin-left: 0;
+    margin-right: 0%;
+    margin: auto;
+}
 body{
-    background-color: rgba(0, 0, 0, 0.485);
+    background-image: url(./cv_background___1_by_comidion_d5lsb1h-fullview.jpeg);
+    background-repeat: no-repeat;
+  background-position: right bottom;
     font-family: 'Ubuntu', sans-serif, 'Times New Roman', Times;}
 h1, h2, h3 {
     color: rgba(239, 14, 247, 0.439);
     font-size:34px;
+    text-align: center;
 }
 p::first-letter {
     color:#FF0000;
     font-size: 150%;
     font-style: italic;
 }
-.para{
+p {
     color:#dbdb69;
-    font-size:16px;
     text-align: center;
 }
 table {
     color:rgba(16, 71, 31, 0.833);
     font-size:1.5em;
-    text-align: end;
+    text-align: center;
+    background-color: antiquewhite;
 }
 #ul {
-    color:hsl(257, 55%, 31%)
-}
-a[target=_blank] {
-    background-color: antiquewhite;
+    text-align: center;
+    color:hsl(257, 55%, 31%);
+    list-style-type: none;
 }
 a:link {
     color: #e2df07;
@@ -42,9 +82,11 @@ a:hover {
 a:active {
     color: #0000FF;
 }
-p:last-of-type{
-    color: #0000FF
-}
 td:last-child{
     color: goldenrod;
+}
+img {
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
